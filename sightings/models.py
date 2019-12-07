@@ -33,8 +33,8 @@ class Sight(models.Model):
             max_length=16,
             choices = AGE_CHOICE,
             )
-    Black = 'Black',
-    Gray = 'Gray',
+    Black = 'Black'
+    Gray = 'Gray'
     Cinnamon = 'Cinnamon'
     COLOR_CHOICE=(
             (Black, 'Black'),
@@ -44,7 +44,7 @@ class Sight(models.Model):
             )
     Primary_Fur_Color = models.CharField(
             help_text = _('Fur color'),
-            max_length=128,
+            max_length=16,
             choices = COLOR_CHOICE,
             )
     Ground_Plane = 'Ground Plane'
