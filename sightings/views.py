@@ -9,6 +9,6 @@ def list_sights(request):
     context = {
             'sights':sights,
             }
-    return HttpResponse(render(request, 'sightings/list.html', context))
+    return render(request, 'sightings/list.html', context)
 
 
