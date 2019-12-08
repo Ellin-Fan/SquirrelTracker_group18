@@ -1,12 +1,33 @@
-<html>
-	<head>
-		<title>List of Unique Squirrel ID</title>
-	</head>
-	<body>
-		<ul>
-        		{% for sight in sights %}
-				<li>{{ sight.Unique_Squirrel_Id }}</li>
-        		{% endfor %}
-		</ul>
-	</body>
+<!doctype html>
+<html lang='en'>
+        <head>
+                <title>List of Squirrel Sightings</title>
+        </head>
+        <body>
+                <a href="add/">Add a New Sighting</a>
+                <table border='1'>
+                        <thead>
+                                <tr>
+                                        <th>Unique Squirrel Id</th>
+                                        <th>Longitude</th>
+                                        <th>Latitude</th>
+                                        <th>Date</th>
+                                        <th>Shift</th>
+                                </tr>
+                        </thead>
+
+                        <tbody>
+                        {% for sight in sights %}
+                                <tr>
+                                        <td><a href="{{sight.Unique_Squirrel_Id}}/">{{ sight.Unique_Squirrel_Id }}</a></td>
+                                        <td>{{ sight.Longitude }}</td>
+                                        <td>{{ sight.Latitude }}</td>
+                                        <td>{{ sight.Date }}</td>
+                                        <td>{{ sight.Shift }}</td>
+                                </tr>
+                        {% endfor %}
+                        </tbody>
+                </table>
+        </body>
 </html>
+
