@@ -1,4 +1,6 @@
-# squirrel_group18
+# Squirrel Tracker
+## by group 18
+
 Squirrel Tracker Django project (group 18) for Tools for Analytics course
 
 A Django app that import the 2018 Central Park Squirrel Census Data (https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw) and track squirrels' locations and behaviours.
