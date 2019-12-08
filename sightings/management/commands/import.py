@@ -32,9 +32,9 @@ class Command(BaseCommand):
                     Kuks = item['Kuks'],
                     Quaas = item['Quaas'],
                     Moans = item['Moans'],
-                    Tail_flags = item['Tail flags'],
-                    Tail_twitches = item['Tail twitches'],
+                    Tail_Flags = item['Tail flags'],
+                    Tail_Twitches = item['Tail twitches'],
                     Approaches = item['Approaches'],
                     Indifferent = item['Indifferent'],
-                    Runs_from = item['Runs from'],)
+                    Runs_From = item['Runs from'],)
             s.save()
