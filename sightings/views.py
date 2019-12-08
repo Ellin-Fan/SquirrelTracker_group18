@@ -50,3 +50,14 @@ def add_sights(request):
 
     return render(request, 'sightings/update.html', context)
 
+def stats_view(request):
+    sights = Sight.objects.all()
+    context = {
+            'Shift': {'AM':sights.filter(Shift='AM').count(),'PM':sights.filter(Shift='PM').count()},
+            'Age': {'Juvenile':sights.filter(Age='Juvenile').count(),'Adult':sights.filter(Age='Adult').count()},
+            'Primary_Fur_Color': {'Black':sights.filter(Primary_Fur_Color='Black').count(),'Gray':sights.filter(Primary_Fur_Color='Gray').count(),'Cinnamon':sights.filter(Primary_Fur_Color='Cinnamon').count()},
+            'Location': {'Above_Ground':sights.filter(Location='Above Ground').count(),'Ground_Plane':sights.filter(Location='Ground Plane').count()},
+            'Runs_From': {'True':sights.filter(Runs_From='TRUE').count(),'False':sights.filter(Runs_From='FALSE').count()},
+            }
+    return render(request, 'sightings/stats.html', {'context':context})
+
