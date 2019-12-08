@@ -1,10 +1,10 @@
 from django.urls import path
 
 from . import views
-app_name='sightings'
 
 urlpatterns = [
-        path('',views.list_sights),
-        path('add/',views.add_sights),
-        path('<Unique_Squirrel_Id>/',views.update_sights),
+        path('map/',views.map_view),
+        path('sightings/',views.list_sights),
+        path('sightings/add/',views.add_sights),
+        path('sightings/<Unique_Squirrel_Id>/',views.update_sights),
         ]
