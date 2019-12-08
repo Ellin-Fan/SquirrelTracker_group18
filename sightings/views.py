@@ -4,6 +4,12 @@ from django.shortcuts import redirect
 from .forms import SightForm
 
 # Create your views here.
+def map_view(request):
+    sights = Sight.objects.all()[:100]
+    context = {
+            'sights':sights,
+            }
+    return render(request, 'sightings/map.html', context)
 
 def list_sights(request):
     sights = Sight.objects.all()
