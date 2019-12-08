@@ -25,8 +25,8 @@ class Sight(models.Model):
             max_length=16,
             choices=SESSION,)
 
-    Date = models.IntegerField(
-            help_text = _('Date of the sighting'),
+    Date = models.DateField(
+            help_text = _('The format is in yyyy-mm-dd'),
             null = True,)
 
     Adult = 'Adult'
@@ -43,6 +43,7 @@ class Sight(models.Model):
             help_text = _('Age of the squirrel'),
             max_length=16,
             choices = AGE_CHOICE,
+            blank = True
             )
 
     Black = 'Black'
@@ -59,6 +60,7 @@ class Sight(models.Model):
             help_text = _('Fur color'),
             max_length=16,
             choices = COLOR_CHOICE,
+            blank = True
             )
 
     Ground_Plane = 'Ground Plane'
@@ -73,6 +75,7 @@ class Sight(models.Model):
             help_text = _('Location'),
             max_length=128,
             choices = LOCATION_CHOICE,
+            blank = True
             )
 
     Specific_Location = models.CharField(
@@ -81,110 +84,73 @@ class Sight(models.Model):
             blank = True,
             )
 
-    TRUE = 'TRUE'
-    FALSE = 'FALSE'
-
-    BOOLEAN_CHOICES = (
-            (TRUE,'True'),
-            (FALSE,'False'),
-            )
-
-    Running = models.CharField(
+    Running = models.NullBooleanField(
             help_text = _('Running'),
-            choices=BOOLEAN_CHOICES,
-            default=FALSE,
-            max_length=16,
-            null=True,
+            blank=True,
     )
-    Chasing = models.CharField(
+    
+    Chasing = models.NullBooleanField(
             help_text = _('Chasing'),
-            choices=BOOLEAN_CHOICES,
-            default=FALSE,
-            max_length=16,
-            null=True,
+            blank=True,
     )
-    Climbing = models.CharField(
+
+    Climbing = models.NullBooleanField(
             help_text = _('Climbing'),
-            choices=BOOLEAN_CHOICES,
-            default=FALSE,
-            max_length=16,
-            null=True,
+            blank=True,
     )
-    Eating = models.CharField(
+
+    Eating = models.NullBooleanField(
             help_text = _('Eating'),
-            choices=BOOLEAN_CHOICES,
-            default=FALSE,
-            max_length=16,
-            null=True,
+            blank=True,
     )
-    Foraging = models.CharField(
+
+    Foraging = models.NullBooleanField(
             help_text = _('Foraging'),
-            choices=BOOLEAN_CHOICES,
-            default=FALSE,
-            max_length=16,
-            null=True,
+            blank=True,
     )
 
     Other_Activities = models.CharField(
-
         help_text = _('Other Activities'),
         max_length = 128,
         null = True,
     )
-    Kuks = models.CharField(
+
+    Kuks = models.NullBooleanField(
             help_text = _('Kuks'),
-            choices=BOOLEAN_CHOICES,
-            default=FALSE,
-            max_length=16,
-            null=True,
-    )
-    Quaas = models.CharField(
-            help_text = _('Quaas'),
-            choices=BOOLEAN_CHOICES,
-            default=FALSE,
-            max_length=16,
-            null=True,
-    )
-    Moans = models.CharField(
-            help_text = _('Moans'),
-            choices=BOOLEAN_CHOICES,
-            default=FALSE,
-            max_length=16,
-            null=True,
-    )
-    Tail_Flags = models.CharField(
-            help_text = _('Tail_Flags'),
-            choices=BOOLEAN_CHOICES,
-            default=FALSE,
-            max_length=16,
-            null=True,
-    )
-    Tail_Twitches = models.CharField(
-            help_text = _('Tail_Twiches'),
-            choices=BOOLEAN_CHOICES,
-            default=FALSE,
-            max_length=16,
-            null=True,
-    )
-    Approaches = models.CharField(
-            help_text = _('Approaches'),
-            choices=BOOLEAN_CHOICES,
-            default=FALSE,
-            max_length=16,
-            null=True,
-    )
-    Indifferent = models.CharField(
-            help_text = _('Indifferent'),
-            choices=BOOLEAN_CHOICES,
-            default=FALSE,
-            max_length=16,
-            null=True,
-    )
-    Runs_From = models.CharField(
-            help_text = _('Runs_From'),
-            choices=BOOLEAN_CHOICES,
-            default=FALSE,
-            max_length=16,
-            null=True,
+            blank=True,
     )
 
+    Quaas = models.NullBooleanField(
+            help_text = _('Quaas'),
+            blank=True,
+    )
+
+    Moans = models.NullBooleanField(
+            help_text = _('Moans'),
+            blank=True,
+    )
+
+    Tail_Flags = models.NullBooleanField(
+            help_text = _('Tail_Flags'),
+            blank=True,
+    )
+
+    Tail_Twitches = models.NullBooleanField(
+            help_text = _('Tail_Twitches'),
+            blank=True,
+    )
+
+    Approaches = models.NullBooleanField(
+            help_text = _('Approaches'),
+            blank=True,
+    )
+
+    Indifferent = models.NullBooleanField(
+            help_text = _('Indifferent'),
+            blank=True,
+    )
+    
+    Runs_From = models.NullBooleanField(
+            help_text = _('Runs_From'),
+            blank=True,
+    )
