@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+	<body>
+		<div>
+		<p>Counts of sightings in each shift</p >
+       		 <table id="shift_table"  style="bgcolor: '#D6FE93'" border='1'>
+			 <thead>
+               			 <tr>
+                   			 <th></th>
+					 <th>AM</th>
+					 <th>PM</th>
+				 </tr>
+			 </thead>
+			 <tbody>
+				 <tr>
+					 <th>Shift</th>
+					 <td>{{context.Shift.AM}}</td>
+					 <td>{{context.Shift.PM}}</td>
+				 </tr>
+			 </tbody>
+		 </table>
+		</div>
+
+		<div>
+		 <p>Counts of juvenile and adult squirrels</p >
+                 <table id="age_table"  style="bgcolor = '#D0FE84'" border='1'>
+                         <thead>
+                                 <tr>
+                                         <th></th>
+					 <th>Juvenile</th>
+                                         <th>Adult</th>
+                                 </tr>
+                         </thead>
+                         <tbody>
+                                 <tr>
+                                         <th>Age</th>
+                                         <td>{{context.Age.Juvenile}}</td>
+                                         <td>{{context.Age.Adult}}</td>
+                                 </tr>
+                         </tbody>
+                 </table>
+		</div>
+
+		 <p>Counts of squirrels in different colors</p >
+                 <table id="color_table"  style="bgcolor = '#C5FE67'" border='1'>
+                         <thead>
+                                 <tr>
+                                         <th></th>
+                                         <th>Black</th>
+                                         <th>Gray</th>
+					 <th>Cinnamon</th>
+                                 </tr>
+                         </thead>
+                         <tbody>
+                                 <tr>
+                                         <th>Primary_Fur_Color</th>
+                                         <td>{{context.Primary_Fur_Color.Black}}</td>
+                                         <td>{{context.Primary_Fur_Color.Gray}}</td>
+					 <td>{{context.Primary_Fur_Color.Cinnamon}}</td>
+                                 </tr>
+                         </tbody>
+                 </table>
+
+		 <p>Counts of sightings in different locations</p >
+                 <table id="location_table"  style="bgcolor = '#BDFF52'" border='1'>
+                         <thead>
+                                 <tr>
+                                         <th></th>
+                                         <th>Above_Ground</th>
+                                         <th>Ground_Plane</th>
+                                 </tr>
+                         </thead>
+                         <tbody>
+                                 <tr>
+                                         <th>Location</th>
+                                         <td>{{context.Location.Above_Ground}}</td>
+                                         <td>{{context.Location.Ground_Plane}}</td>
+                                 </tr>
+                         </tbody>
+                 </table>
+		 
+		 <p>Counts of squirrels that run from people</p >
+                 <table id="runfrom_table"  style="bgcolor = '#B6FE40'" border='1'>
+                         <thead>
+                                 <tr>
+                                         <th></th>
+                                         <th>True</th>
+                                         <th>False</th>
+                                 </tr>
+                         </thead>
+                         <tbody>
+                                 <tr>
+                                         <th>Runs From People</th>
+                                         <td>{{context.Runs_From.True}}</td>
+                                         <td>{{context.Runs_From.False}}</td>
+                                 </tr>
+                         </tbody>
+                 </table>
+	</body>
+</html>
