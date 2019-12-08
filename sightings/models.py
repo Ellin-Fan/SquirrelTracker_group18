@@ -23,11 +23,13 @@ class Sight(models.Model):
     Shift = models.CharField(
             help_text = _('Whether the sight is in the morning or late afternoon?'),
             max_length=16,
-            choices=SESSION,)
+            choices=SESSION,
+            blank=True)
 
     Date = models.DateField(
             help_text = _('The format is in yyyy-mm-dd'),
-            null = True,)
+            null = True,
+            blank=True)
 
     Adult = 'Adult'
     Juvenile = 'Juvenile'
@@ -113,6 +115,7 @@ class Sight(models.Model):
         help_text = _('Other Activities'),
         max_length = 128,
         null = True,
+        blank = True
     )
 
     Kuks = models.NullBooleanField(
