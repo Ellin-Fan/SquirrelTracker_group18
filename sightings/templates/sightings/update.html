@@ -1,17 +1,30 @@
 <!doctype html>
 <html>
         <head>
-                <title>Update the Squirrel Sight</title>
+                <title>Squirrel Tracker: Update the Squirrel Sighting</title>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         </head>
         <body>
-		<p><b>Please use the following form to update the squirrel sighting</b></p>
+<style>body{padding-left:10px; padding-right:10px;}</style>
+                <p>
+                <br>
+                <h2><img src="https://image.flaticon.com/icons/svg/604/604239.svg" style="width:60px" class="roun
+ded" alt="..." >   Update the Squirrel Sighting    <img src="https://image.flaticon.com/icons/svg/1230/1230876.svg"
+style="width:60px" class="rounded" alt="..." >
+                </h2>
+                <p>Please use the following form to update the squirrel sighting</p>
+                <hr>
+                <br>
                 <form method='post'>
                         {% csrf_token %}
                         {{form.as_p}}
                         <br>
-			<p>Thanks for your info!</p>
+                        <p>Thanks for info! <img src="https://image.flaticon.com/icons/svg/1140/1140163.svg" style="width:30px" class="rounded" alt="..." ></p>
                         <input type="submit" name="save">
-			<br>
+                        <br>
                 </form>
+                <br>
+                <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </body>
 </html>
