@@ -1,21 +1,27 @@
 <!doctype html>
 <html>
+	<head>
+		<title>Squirrel Tracker: Statistics Overview</title>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        </head>
         <body>
 		<p>
-		<b>Statistics Overview</b>
 		<br>
+		<h2>Squirrel Tracker: Statistics Overview</h2>
+		<hr>
 		There are {{context.Total}} squirrel sightings in our records.
 		<br>
 		The following statistics do not include unknown and missing tracking records.
 		</p>
+		<br>
                 <div>
-                        <table id="shift_table"  style="bgcolor: '#D6FE93'" border='1'>
+                        <table class='table' id="shift_table" align="center" style="width: 600px">
 				<caption><b># Sightings in each shift</b></caption>
-                                <thead>
+                                <thead class="thead-dark">
                                          <tr>
-                                                 <th></th>
-                                                 <th>AM</th>
-                                                 <th>PM</th>
+                                                 <th scope='col'></th>
+                                                 <th scope='col'>AM</th>
+                                                 <th scope='col'>PM</th>
                                          </tr>
                                  </thead>
                                  <tbody>
@@ -35,13 +41,13 @@
 		<br>
 		<br>
                 <div>
-                         <table id="age_table"  style="bgcolor: '#D6FE93'" border='1'>
+                         <table class="table" id="age_table" align="center" style="width: 600px">
 				 <caption><b># Juvenile and adult squirrels</b></caption>
-				 <thead>
+				 <thead class="thead-dark">
                                          <tr>
-                                                 <th></th>
-                                                 <th>Juvenile</th>
-                                                 <th>Adult</th>
+                                                 <th scope='col'></th>
+                                                 <th scope='col'>Juvenile</th>
+                                                 <th scope='col'>Adult</th>
                                          </tr>
                                          </thead>
                                  <tbody>
@@ -61,14 +67,14 @@
 		<br>
 		<br>
                 <div>
-			<table id="color_table"  style="bgcolor: '#D6FE93'" border='1'>
+			<table class='table' id="color_table" align="center"  style="width: 800px">
 				<caption><b># Squirrels in different colors</b></caption>
-                                <thead>
+                                <thead class="thead-dark">
                                          <tr>
-                                                 <th></th>
-                                                 <th>Black</th>
-                                                 <th>Gray</th>
-                                                 <th>Cinnamon</th>
+                                                 <th scope='col'></th>
+                                                 <th scope='col'>Black</th>
+                                                 <th scope='col'>Gray</th>
+                                                 <th scope='col'>Cinnamon</th>
                                          </tr>
                                  </thead>
                                  <tbody>
@@ -90,13 +96,13 @@
 		<br>
 		<br>
                 <div>
-                         <table id="location_table"  style="bgcolor: '#D6FE93'" border='1'>
+                         <table class='table' id="location_table" align="center"  style="width: 600px">
 				 <caption><b># Squirrels in locations</b ></caption>
-				 <thead>
+				 <thead class="thead-dark">
                                          <tr>
-                                                 <th></th>
-                                                 <th>Above_Ground</th>
-                                                 <th>Ground_Plane</th>
+                                                 <th scope='col'></th>
+                                                 <th scope='col'>Above_Ground</th>
+                                                 <th scope='col'>Ground_Plane</th>
                                          </tr>
                                  </thead>
                                  <tbody>
@@ -116,13 +122,15 @@
 		<br>
 		<br>
                 <div>
-			<table id="runfrom_table"  style="bgcolor: '#D6FE93'" border='1'>
-				<caption><b># Squirrels that run from people</b></caption>
-				<thead>
+			<table class='table' id="runfrom_table" align="center" style="width: 600px">
+				<div class="alert alert-warning text-center" style="width: 40% margin-left:30%" role="alert">
+					<h5><strong> Counts of squirrels that run from people </strong></h5>
+				</div>
+				<thead class="thead-dark">
 					 <tr>
-						 <th></th>
-						 <th>True</th>
-						 <th>False</th>
+						 <th scope='col'></th>
+						 <th scope='col'>True</th>
+						 <th scope='col'>False</th>
 					 </tr>
 				 </thead>
 				 <tbody>
