@@ -2,27 +2,33 @@
 <html lang='en'>
         <head>
                 <title>List of Squirrel Sightings</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         </head>
         <body>
 		<p>
-		<b>Welcome to our app: Squirrel Tracker!</b>
+		<br>
+		<h2>Welcome to the Squirrel World: Squirrel Tracker!</h2>
+		<hr>
 		</p>
 		<p>
 		<ul>
-			<li><a href="/map/">Click here</a> to view the squirrel tracking map.</li>
-			<li><a href="stats/">Click here</a> to view some descriptive statistics.</li>
-			<li><a href="add/">Click here</a> to add a New Sighting.</li>
+			<h5><li><a href="/map/" class="badge badge-primary">MAP</a> Click the button to view the squirrel tracking map.</li></h5>
+			<h5><li><a href="stats/" class="badge badge-info">STATS</a> Click the button to look at some descriptive statistics.</li></h5>
+			<h5><li><a href="add/"  class="badge badge-warning">ADD</a> Did you see a squirrel? Click the button to add a new squirrel sighting.</li></h5>
 		</ul>
 		</p>
-                <table border='1'>
-			<caption><b>Squirrel Tracker Table</b></caption>
-                        <thead>
+		<br>
+                <table class="table">
+			<div class="alert alert-dark text-center" role="alert">
+				<h5><strong> Overview: Squirrel Sighting Records </strong></h5>
+			</div>
+			<thead class = "thead-dark">
                                 <tr>
-                                        <th>Unique Squirrel Id</th>
-                                        <th>Longitude</th>
-                                        <th>Latitude</th>
-                                        <th>Date</th>
-                                        <th>Shift</th>
+                                        <th scope = "col">Unique Squirrel Id</th>
+                                        <th scope = "col">Longitude</th>
+                                        <th scope = "col">Latitude</th>
+                                        <th scope = "col">Date</th>
+                                        <th scope = "col">Shift</th>
                                 </tr>
                         </thead>
 
