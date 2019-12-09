@@ -6,7 +6,7 @@ from .forms import SightForm
 
 # Create your views here.
 def homepage_view(request):
-    return render(request,'sightings/list.html')
+    return render(request,'sightings/homepage.html')
 
 def map_view(request):
     sights = Sight.objects.all()[:100]
