@@ -13,9 +13,9 @@ class Command(BaseCommand):
             data = list(reader)
         
         def convertBool(str_):
-            if str_ in ['TRUE', 'true', 'True']:
+            if str(str_) in ['TRUE', 'true', 'True']:
                 str_ = True
-            elif str_ in ['FALSE', 'false', 'False']:
+            elif str(str_) in ['FALSE', 'false', 'False']:
                 str_ = False
             else:
                 str_ = None
