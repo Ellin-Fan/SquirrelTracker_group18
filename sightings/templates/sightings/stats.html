@@ -1,22 +1,26 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Squirrel Tracker: Statistics Overview</title>
+		<title>Squirrel Tracker: Statistics Overview </title> 
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         </head>
         <body>
 		<p>
 		<br>
-		<h2>Squirrel Tracker: Statistics Overview</h2>
+		<h2>  <img src="https://image.flaticon.com/icons/svg/2077/2077173.svg" style="width:60px" class="rounded" alt="..." >       Squirrel Tracker: Statistics Overview       <img src="https://image.flaticon.com/icons/svg/2077/2077173.svg" style="width:60px" class="rounded" alt="..." ></h2>
 		<hr>
-		There are {{context.Total}} squirrel sightings in our records.
+		<ul>
+			<li>There are <strong>{{context.Total}}</strong>  <img src="https://image.flaticon.com/icons/svg/570/570656.svg" style="width:40px" class="rounded" alt="..." ><img src="https://image.flaticon.com/icons/svg/570/570656.svg" style="width:40px" class="rounded" alt="..." ><img src="https://image.flaticon.com/icons/svg/570/570656.svg" style="width:40px" class="rounded" alt="..." >  sightings in our records.</li>
 		<br>
-		The following statistics do not include unknown and missing tracking records.
+		<li>The following statistics do not include unknown and missing tracking records.</li>
+		</ul>
 		</p>
 		<br>
                 <div>
                         <table class='table' id="shift_table" align="center" style="width: 600px">
-				<caption><b># Sightings in each shift</b></caption>
+				<div class="alert alert-warning text-center" style="width: 40% margin-left:30%" role="alert">
+					<h5><strong> Counts of squirrel sightings in each shift </strong></h5>
+                                </div>
                                 <thead class="thead-dark">
                                          <tr>
                                                  <th scope='col'></th>
@@ -42,7 +46,9 @@
 		<br>
                 <div>
                          <table class="table" id="age_table" align="center" style="width: 600px">
-				 <caption><b># Juvenile and adult squirrels</b></caption>
+				 <div class="alert alert-warning text-center" style="width: 40% margin-left:30%" role="alert">
+                                        <h5><strong> Counts of juvenile and adult squirrels </strong></h5>
+                                </div>
 				 <thead class="thead-dark">
                                          <tr>
                                                  <th scope='col'></th>
@@ -68,7 +74,9 @@
 		<br>
                 <div>
 			<table class='table' id="color_table" align="center"  style="width: 800px">
-				<caption><b># Squirrels in different colors</b></caption>
+				<div class="alert alert-warning text-center" style="width: 40% margin-left:30%" role="alert">
+                                        <h5><strong> Counts of squirrels in different colors </strong></h5>
+                                </div>
                                 <thead class="thead-dark">
                                          <tr>
                                                  <th scope='col'></th>
@@ -97,7 +105,9 @@
 		<br>
                 <div>
                          <table class='table' id="location_table" align="center"  style="width: 600px">
-				 <caption><b># Squirrels in locations</b ></caption>
+				 <div class="alert alert-warning text-center" style="width: 40% margin-left:30%" role="alert">
+                                        <h5><strong> Counts of squirrels in different locations </strong></h5>
+                                </div>
 				 <thead class="thead-dark">
                                          <tr>
                                                  <th scope='col'></th>
@@ -147,6 +157,8 @@
 				 </tbody>
 			 </table>
                 </div>
+		<div>Icons made by <a href=" " title="Freepik">Freepik</a > from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a >
+		</div>
         </body>
 </html>
 
