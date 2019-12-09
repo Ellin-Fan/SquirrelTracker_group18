@@ -1,14 +1,19 @@
 <!doctype html>
 <html>
         <head>
-                <title>Update the Squirrel Sight</title>
+                <title>Add a Squirrel Sight</title>
         </head>
         <body>
+		<p><b>Did you see a new squirrel?</b></p>
+		<br>
+		<p>Please fill out the following information to share it with us :)</p>
                 <form method='post'>
                         {% csrf_token %}
                         {{form.as_p}}
                         <br>
+			<p>Thanks for sharing!</p>
                         <input type="submit" name="add">
+			<br>
                 </form>
         </body>
 </html>
