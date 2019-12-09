@@ -52,7 +52,7 @@ def add_sights(request):
             'form':form,
             }
 
-    return render(request, 'sightings/update.html', context)
+    return render(request, 'sightings/add.html', context)
 
 
 def stats_view(request):

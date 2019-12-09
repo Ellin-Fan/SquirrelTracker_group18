@@ -4,11 +4,14 @@
                 <title>Update the Squirrel Sight</title>
         </head>
         <body>
+		<p><b>Please use the following form to update the squirrel sighting</b></p>
                 <form method='post'>
                         {% csrf_token %}
                         {{form.as_p}}
                         <br>
+			<p>Thanks for your info!</p>
                         <input type="submit" name="save">
+			<br>
                 </form>
         </body>
 </html>
