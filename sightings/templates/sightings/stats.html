@@ -1,9 +1,16 @@
 <!doctype html>
 <html>
         <body>
+		<p>
+		<b>Statistics Overview</b>
+		<br>
+		There are {{context.Total}} squirrel sightings in our records.
+		<br>
+		The following statistics do not include unknown and missing tracking records.
+		</p>
                 <div>
-                        <p>Counts of sightings in each shift</p >
                         <table id="shift_table"  style="bgcolor: '#D6FE93'" border='1'>
+				<caption><b># Sightings in each shift</b></caption>
                                 <thead>
                                          <tr>
                                                  <th></th>
@@ -25,10 +32,12 @@
                                  </tbody>
                          </table>
                 </div>
+		<br>
+		<br>
                 <div>
-                        <p>Counts of juvenile and adult squirrels</p >
                          <table id="age_table"  style="bgcolor: '#D6FE93'" border='1'>
-                                <thead>
+				 <caption><b># Juvenile and adult squirrels</b></caption>
+				 <thead>
                                          <tr>
                                                  <th></th>
                                                  <th>Juvenile</th>
@@ -49,9 +58,11 @@
                                  </tbody>
                          </table>
                 </div>
+		<br>
+		<br>
                 <div>
-                        <p>Counts of squirrels in different colors</p >
-                         <table id="color_table"  style="bgcolor: '#D6FE93'" border='1'>
+			<table id="color_table"  style="bgcolor: '#D6FE93'" border='1'>
+				<caption><b># Squirrels in different colors</b></caption>
                                 <thead>
                                          <tr>
                                                  <th></th>
@@ -76,10 +87,12 @@
                                  </tbody>
                          </table>
                 </div>
+		<br>
+		<br>
                 <div>
-                        <p>Counts of squirrels in locations</p >
                          <table id="location_table"  style="bgcolor: '#D6FE93'" border='1'>
-                                <thead>
+				 <caption><b># Squirrels in locations</b ></caption>
+				 <thead>
                                          <tr>
                                                  <th></th>
                                                  <th>Above_Ground</th>
@@ -100,29 +113,31 @@
                                  </tbody>
                          </table>
                 </div>
+		<br>
+		<br>
                 <div>
-                <p>Counts of squirrels that run from people</p >
-                         <table id="runfrom_table"  style="bgcolor: '#D6FE93'" border='1'>
-                                <thead>
-                                         <tr>
-                                                 <th></th>
-                                                 <th>True</th>
-                                                 <th>False</th>
-                                         </tr>
-                                 </thead>
-                                 <tbody>
-                                         <tr>
-                                                 <th>Run from people</th>
-                                                 <td>{{context.Runs_From.True}}</td>
-                                                 <td>{{context.Runs_From.False}}</td>
-                                         </tr>
-                                         <tr>
-                                                 <th>percentage %</th>
-                                                 <td>{{context.Runs_From_pct.True}}</td>
-                                                 <td>{{context.Runs_From_pct.False}}</td>
-                                         </tr>
-                                 </tbody>
-                         </table>
+			<table id="runfrom_table"  style="bgcolor: '#D6FE93'" border='1'>
+				<caption><b># Squirrels that run from people</b></caption>
+				<thead>
+					 <tr>
+						 <th></th>
+						 <th>True</th>
+						 <th>False</th>
+					 </tr>
+				 </thead>
+				 <tbody>
+					 <tr>
+						 <th>Run from people</th>
+						 <td>{{context.Runs_From.True}}</td>
+						 <td>{{context.Runs_From.False}}</td>
+					 </tr>
+					 <tr>
+						 <th>percentage %</th>
+						 <td>{{context.Runs_From_pct.True}}</td>
+						 <td>{{context.Runs_From_pct.False}}</td>
+					 </tr>
+				 </tbody>
+			 </table>
                 </div>
         </body>
 </html>

@@ -99,6 +99,7 @@ def stats_view(request):
     False_pct = "{:.2%}".format(False_pct)
 
     context = {
+            'Total':sights.count(),
             'Shift': {'AM': AM_n,'PM': PM_n},
             'Shift_pct': {'AM': AM_pct,'PM': PM_pct},
             'Age': {'Juvenile': Juvenile_n, 'Adult': Adult_n},
