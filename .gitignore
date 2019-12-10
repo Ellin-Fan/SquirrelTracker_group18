@@ -1,2 +1,4 @@
 *.pyc
 __pycache_/_
+collected-static
+*.sqlite3
