@@ -1,4 +1,6 @@
-# Squirrel Tracker by group 18
+# Squirrel Tracker
+
+![image](https://raw.githubusercontent.com/Ellin-Fan/squirrel_group18/master/SquirrelTracker.jpg)
 
 ## What is it?
 
