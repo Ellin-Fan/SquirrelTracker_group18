@@ -37,7 +37,7 @@ class Sight(models.Model):
     AGE_CHOICE=(
             (Adult,'Adult'),
             (Juvenile, 'Juvenile'),
-            (None, '-'),
+            (None, ''),
             (Unknown, '?'),
             )
 
@@ -55,7 +55,7 @@ class Sight(models.Model):
             (Black, 'Black'),
             (Gray, 'Gray'),
             (Cinnamon, 'Cinnamon'),
-            (None, '-'),
+            (None, ''),
             )
 
     Primary_Fur_Color = models.CharField(
@@ -70,7 +70,7 @@ class Sight(models.Model):
     LOCATION_CHOICE=(
             (Ground_Plane, 'Ground Plane'),
             (Above_Ground, 'Above Ground'),
-            (None, '-'),
+            (None, ''),
             )
     
     Location =  models.CharField(
