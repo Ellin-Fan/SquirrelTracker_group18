@@ -3,7 +3,7 @@
 
 Squirrel Tracker Django project (group 18) for Tools for Analytics course
 
-A Django app that import the 2018 Central Park Squirrel Census Data (https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw) and track squirrels' locations and behaviours.
+We are two students in Columbia Univerisity, and we have created a Django app which could be used to track squirrels' locations and behaviours in NYC Central Park. The data used in the app is imported from the 2018 Central Park Squirrel Census Data (https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw).
 
 The app supports the below function:
 1) adding a new sight
@@ -13,7 +13,6 @@ The app supports the below function:
 
 The project is done by Project Group 18, Section 2
 
-Uni: [cl3899, xf2207]
+UNIs: [cl3899, xf2207]
 
-A link to the server running our application: https://<your project id>.appspot.com/
-
+A link to the server running our application: https://robotic-tiger-255500.appspot.com/
