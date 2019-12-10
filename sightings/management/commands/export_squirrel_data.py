@@ -35,7 +35,7 @@ class Command(BaseCommand):
                         'Tail twitches',
                         'Approaches',
                         'Indifferent',
-                        'Runs_from'
+                        'Runs from'
                         ]
                     )
             squirrel_writer.writeheader()
@@ -69,6 +69,6 @@ class Command(BaseCommand):
                     'Tail twitches':row.Tail_Twitches,
                     'Approaches':row.Approaches,
                     'Indifferent':row.Indifferent,
-                    'Runs_from':row.Runs_From,          
+                    'Runs from':row.Runs_From,          
                     })
 
